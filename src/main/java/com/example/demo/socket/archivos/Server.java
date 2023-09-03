@@ -26,9 +26,10 @@ public class Server {
 				clientSocket = serverSocket.accept();
 				System.out.println("------------- 3 Llegada de un clientSocket -----------");
 				
-				File fileDestino = new File("D:/server/Java-Logo2.png");
+				File fileDestino = new File("D:\\Users\\JULIO ALBERTO\\Estudios-Cibertec\\Ciclo-6-CIbertec\\Desarrollo de Servicios Web II (Sabado 2)\\Server\\JulioServer.jpg");
 				FileOutputStream fos = new FileOutputStream(fileDestino);
 				DataInputStream entrada = new DataInputStream(clientSocket.getInputStream());
+				
 				
 				int byteLeidos;
 				while ( (byteLeidos = entrada.read())!= -1) {
